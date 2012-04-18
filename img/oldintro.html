@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>childrenofgodcult!!!!</title>
+		<style type="text/css">
+body {
+	width: 940px;
+	height:480px;
+	color: white;
+	}
+#webpage {
+	width: 100%;
+	height: 90%;
+	background-color: black;
+}
+		</style>
+	</head>
+	<body>
+		<audio id="narration" controls>
+			<source src="content/intro/intro.mp3" type='audio/mp3;'/>
+		</audio>
+		<div id="target"></div>
+		<div id="webpage"></div>
+	</body>   
+	<script>
+      // ensure the web page (DOM) has loaded
+      document.addEventListener("DOMContentLoaded", function () {
+
+         // Create a popcorn instance by calling Popcorn("#id-of-my-video")
+         var pop = Popcorn("#narration");
+
+         // add a footnote at 2 seconds, and remove it at 6 seconds
+         pop.footnote({
+           start: 2,
+           end: 6,
+           text: "Pop!!!!!!!!!!!!!",
+           target: "webpage"
+         });
+
+         // play the video right away
+         pop.play();
+
+      }, false);
+    </script>
+	<script type="text/javascript" src="js/popcorn.js"></script>
+	<script type="text/javascript" src="js/popcorn-base.js"></script>
+	<script type="text/javascript" src="js/plugins/popcorn.baseTemplate.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</html>
