@@ -9,6 +9,9 @@ img {
     vertical-align: middle;
     height: 100%;
 }
+video {
+    width: 90%;
+}
 p {
 	color: #000;
 	font-size: 20px;
@@ -52,7 +55,7 @@ a {
 }
 #question_title {
 	position: absolute;
-	bottom: 30px;
+	bottom: 20px;
 	left: 500px;
 	font-family: 'Belleza', sans-serif;
 	font-size: 20px;
@@ -77,4 +80,50 @@ a {
 }
 .subvideo:hover {
 	opacity: 1.0
+}
+#bg {
+	position:fixed; 
+	top:-25%; 
+	left:-25%; 
+	width:150%; 
+	height:150%;
+}
+#bg2 {
+	position:absolute; 
+	top:0; 
+	left:0; 
+	right:0; 
+	bottom:0; 
+	margin:auto; 
+	min-width:50%;
+	min-height:50%;
+}
+.innertext {
+	font-family: 'Belleza', sans-serif;
+	font-weight: bold;
+	color: red;
+	margin-top: 40px;
+}
+#cult {
+	background-image: url('../img/berg.jpg')
+}
+
+#comet {
+	background-image: url('../img/comet.jpg')
+}
+
+#flirty {
+	background-image: url('../img/flirty.jpg')
+}
+
+#praying {
+	background-image: url('../img/praying.jpg') 
+}
+#mainvideo {
+	position: absolute;
+	top: 15%;
+	right: 5%;
+	width: 75%;
+	min-height: 480px;
+	float: right;
 }

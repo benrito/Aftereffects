@@ -8,11 +8,7 @@
 </head>
 <body>
 <body>
-    <audio autoplay="autoplay">
-        <source src="media/intro.mp3" type="audio/mp3" />
-        Your browser does not support the audio tag.
-    </audio>
-    <div id="title">Children of God</div>
+    <div id="title">Growing up Absurd</div>
     <div id="question_title">What was it like growing up in the cult?</div>
     <div id="next">
     <a href="index.html">Return to intro >></a>
@@ -22,12 +18,16 @@
    <!-- the videos!!! --!>
     
     <div id="the_videos">
-    	<div id="comet" class="subvideo"></div>
-    	<div id="cult" class="subvideo"></div>
-    	<div id="flirty" class="subvideo"></div>
-    	<div id="praying" class="subvideo"></div>
+    	<a href="#"><div id="cult" class="subvideo"><div class="innertext"> What does the cult believe?</div></div></a>
+    	<a href="grid2.html"><div id="comet" class="subvideo"><div class="innertext">When is He coming?</div></div></a>
+    	<a href="grid3.html"><div id="flirty" class="subvideo"><div class="innertext">What is "flirty fishing?"</div></div></a>
+    	<a href="grid4.html"><div id="praying" class="subvideo"><div class="innertext">Does praying work?</div></div></a>
     </div>
-    
+    <div id="mainvideo">
+	<video autoplay="autoplay" controls="controls" onended="testEnded()">
+    <source id="srcWebm" src="media/cult.webm">
+	</video>    
+	</div>
     </div>
 </body>
 </html>
